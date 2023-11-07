@@ -1,0 +1,4 @@
+str =input("Введите слова:")
+str1 = " ".join(str.split(" ")[::-1])
+list = str1.split()
+print(list)
