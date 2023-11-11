@@ -1,0 +1,4 @@
+a = input("Введите строку:")
+b = a.count(input("x:"))
+c = a.count(input("y:"))
+print(f'x:{b}, y:{c}')
