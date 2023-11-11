@@ -1,0 +1,4 @@
+a = input("Введите числа:").split()
+b = int(input("Введите степень:"))
+c = [int(a)**b for a in a]
+print(c)
