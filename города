@@ -1,0 +1,13 @@
+a = int(input())
+b = {}
+for _ in range(a):
+    c = input()
+    if c in b:
+        b[c] += 1
+    else:
+        b[c] = 1
+count = 0
+for value in b.values():
+    if value > 1:
+        count += 1*2
+print(count)
