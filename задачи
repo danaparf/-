@@ -1,0 +1,18 @@
+algebra = set()
+geometry = set()
+trigonometry = set()
+algebra_students = input().split()
+for student in algebra_students:
+    algebra.add(student)
+geometry_students = input().split()
+for student in geometry_students:
+    geometry.add(student)
+trigonometry_students = input().split()
+for student in trigonometry_students:
+    trigonometry.add(student)
+all_three = algebra.intersection(geometry, trigonometry)
+if len(all_three) == 0:
+    print("Все три задачи никто не решил")
+else:
+    for student in sorted(all_three):
+        print(student, end=" ")
