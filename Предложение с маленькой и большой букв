@@ -1,0 +1,18 @@
+def capitalize_text(text):
+    capitalized_text = ""
+    capitalize_next = True
+    for i in range(len(text)):
+        if text[i].isalpha():
+            if capitalize_next:
+                capitalized_text += text[i].upper()
+                capitalize_next = False
+            else:
+                capitalized_text += text[i].lower()
+        else:
+            capitalized_text += text[i]
+            if text[i] in [".", "!", "?"]:
+                capitalize_next = True
+    return capitalized_text
+text = "на этом заканчиваю свое сочинение. поставьте пятерку, Мария Ивановна! я очень старалась!"
+capitalized_text = capitalize_text(text)
+print(capitalized_text)
