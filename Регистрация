@@ -1,0 +1,5 @@
+def register_user(name, surname, patronymic, age):
+    result = f'{surname} {name} {patronymic} {age} г.р. зарегистрирован'
+    return result
+user_info = register_user("Даниил", "Парфенюк", "Витальевич", "2006")
+print(user_info)
