@@ -1,0 +1,14 @@
+def isPalindrome(text):
+    reversedText = ''
+    for char in text:
+        reversedText = char + reversedText
+    if text == reversedText:
+        return True
+    else:
+        return False
+a = input()
+print(isPalindrome(a))
+b = input()
+print(isPalindrome(b))
+c = input()
+print(isPalindrome(c))
