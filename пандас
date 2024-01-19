@@ -1,0 +1,12 @@
+1)
+import pandas as pd
+d = {'a':['1', '2', '3', '4', '5'],
+     'b':[5, 4, 3, 2, 1],
+     'z':[2, 1, 5, 3, 4]}
+df = pd.DataFrame(d)
+df
+2)
+print(df[:3])
+print(df[-3:])
+3)
+df.to_csv('библиотека пандас')
