@@ -1,12 +1,13 @@
+1)
 import numpy as np 
 arr_100 = np.random.randint(1, 11, size=100) 
 percent_over_7 = np.mean(arr_100 > 7) * 100 
-
+2)
 experiments = 1000 
 results = [np.mean(np.random.randint(1, 11, size=100) > 7) * 100 for _ in range(experiments)] 
 percent_results_equal_20 = np.mean(np.array(results) == 20) 
-
+3)
 matrix_10x10 = np.tile(np.arange(1, 11), (10, 1)) 
-
+4)
 column_sums = np.sum(matrix_10x10, axis=0) 
 arr_100, percent_over_7, percent_results_equal_20, matrix_10x10, column_sums 
