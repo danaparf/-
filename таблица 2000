@@ -1,0 +1,8 @@
+1)
+import pandas as pd
+df = pd.read_csv('/content/Customers.csv', delimiter=";")
+df
+2)1.
+df[(df['Age'] > 30) & (df['Income'] < 30000)]
+2)2.
+df[(df['Profession'] == 'Lawyer') & (df['Work Experience'] > 5)]
